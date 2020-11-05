@@ -637,7 +637,7 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
 
    if (text.includes("!quotes"))
    {
-      var url = 'https://jagokata.com/kata-bijak/acak.html'
+      var url = 'https://mhankbarbar.herokuapp.com/api/randomquotes'
       axios.get(url)
          .then((result) =>
          {
