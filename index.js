@@ -776,7 +776,7 @@ gtts.save(filepath, suara, function() {
 await new Promise(resolve => setTimeout(resolve, 500));
 
 	if(suara.length > 200){ // check longness of text, because otherways google translate will give me a empty file
-  msg.reply("Text kepanjangan bro!")
+  msg.reply("Text to long, split in text of 200 characters")
 }else{
 
 const buffer = fs.readFileSync(filepath)
