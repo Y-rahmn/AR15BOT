@@ -17,8 +17,8 @@ Sebelum lu jalanin sc nya install dulu lah.
 ```bash
 > kalo lu belum punya apk termux, download di playstore
 > masuk ke apk termux lalu ketik dibawah ini!
-> git clone https://github.com/aris187id/A187ID.git
-> cd A187Id
+> git clone https://github.com/aris187id/bot
+> cd bot
 > bash install.sh
 > node index.js
 > Tinggal scan qr dah
@@ -48,5 +48,4 @@ Sebelum lu jalanin sc nya install dulu lah.
 ## Special Thanks to
 * [`termux-whatsapp-bot`](https://github.com/fdciabdul/termux-whatsapp-bot)
 
-### Donate
-* [`Saweria`](https://saweria.co/donate/bintangnurpradana)
+
