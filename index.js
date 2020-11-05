@@ -637,13 +637,13 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
 
    if (text.includes("!quotes"))
    {
-      var url = 'https://mhankbarbar.herokuapp.com/api/randomquotes'
+      var url = 'https://https://jagokata.com/kata-bijak/kata-cinta.html'
       axios.get(url)
          .then((result) =>
          {
-            let $ = cheerio.load(result.data);
-            var author = $('a[class="auteurfbnaam"]').contents().first().text();
-            var kata = $('q[class="fbquote"]').contents().first().text();
+            let $ = cheerio.load(body);
+    			var author = $('a[class="auteurfbnaam"]').contents().first().text();
+   				var kata = $('q[class="fbquote"]').contents().first().text();
 
             conn.sendMessage(
                id,
