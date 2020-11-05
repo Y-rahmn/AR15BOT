@@ -757,33 +757,77 @@ scdl("https://m.soundcloud.com/abdul-muttaqin-701361735/lucid-dreams-gustixa-ft-
 
 
 
- else if (text.includes("!tts")) {
-  var teks = text.split("!ttsid ")[1];
-  var path = require('path');
-  var text1 = teks.slice(6);
-  text1 = suara;
-  var suara = text.replace(/!ttsid/g, text1);
-  var filepath = 'mp3/bacot.wav';
-  
-  
-/*
- * save audio file
- */
-
-gtts.save(filepath, suara, function() {
-  console.log(`${filepath} MP3 SAVED!`)
-});
-await new Promise(resolve => setTimeout(resolve, 500));
-
-	if(suara.length > 200){ // check longness of text, because otherways google translate will give me a empty file
-  msg.reply("Text to long, split in text of 200 characters")
-}else{
-
-const buffer = fs.readFileSync(filepath)
-	conn.sendMessage(id , buffer , MessageType.audio);
-
-};
-
+ else if (msg.body.startsWith("!tts")) {
+		var fs = require('fs')
+		const ttsId = require('node-gtts')('id')
+		const dataText = msg.body.slice(8)
+		const decId = (callback) => {
+			ttsId.save('./tts/resId.mp3', dataText, () => {
+				console.log('Sukses generate tts id')
+				const fileId = fs.readFileSync('./tts/resId.mp3')
+				const dataId = fileId.toString('base64')
+				console.log(dataId);
+				callback(undefined, {
+					data: dataId
+				})
+			  })
+		  	}
+		const ttsEn = require('node-gtts')('en')
+		const decEn = (callback) => {
+			ttsEn.save('./tts/resEn.mp3', dataText, () => {
+				console.log('Sukses generate tts en')
+				const fileEn = fs.readFileSync('./tts/resEn.mp3')
+				const dataEn = fileEn.toString('base64')
+				console.log(dataEn);
+				callback(undefined, {
+					data: dataEn
+				})
+		  	  })
+		   	}
+		const ttsJa = require('node-gtts')('ja')
+		const decJa = (callback) => {
+			ttsJa.save('./tts/resJa.mp3', dataText, () => {
+				console.log('Sukses generate tts ja')
+				const fileJa = fs.readFileSync('./tts/resJa.mp3')
+				const dataJa = fileJa.toString('base64')
+				console.log(dataJa);
+				callback(undefined, {
+					data: dataJa
+				})
+		     })
+		   }
+		const ttsAr = require('node-gtts')('ar')
+		const decAr = (callback) => {
+			ttsAr.save('./tts/resAr.mp3', dataText, () => {
+				console.log('Sukses generate tts ar')
+				const fileAr = fs.readFileSync('./tts/resAr.mp3')
+				const dataAr = fileAr.toString('base64')
+				console.log(dataAr);
+				callback(undefined, {
+					data: dataAr
+				})
+		     })
+		   }
+		var dataBhs = msg.body.slice(5, 7)
+		if (dataBhs === 'en') {
+			decEn((error, {data} = {}) => {
+				msg.reply(new MessageMedia('audio/mp3', data, 'Me Bot'))
+			})
+		} else if (dataBhs === 'id') {
+			decId((error, {data} = {}) => {
+				msg.reply(new MessageMedia('audio/mp3', data, 'Me Bot'))
+			})
+		} else if (dataBhs === 'jp') {
+			decJa((error, {data} = {}) => {
+				msg.reply(new MessageMedia('audio/mp3', data, 'Me Bot'))
+			})
+		} else if (dataBhs == 'ar') {
+			decAr((error, {data} = {}) => {
+				msg.reply(new MessageMedia('audio/mp3', data, 'Me Bot'))
+			})
+		}else{
+			msg.reply('Masukkan bahasa : [id] untuk indonesia, [en] untuk inggris, [jp] untuk jepang, dan [ar] untuk arab')
+		};
 
 }
 
