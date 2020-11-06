@@ -608,17 +608,7 @@ fetch('https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-20
 	})
 }
 
-  if (msg.body == "!leave") {
-    	// Leave the group
-    	let chat = await msg.getChat();
-    	if (chat.isGroup) {
-      		chat.leave();
-    	} {
-      		msg.reply("This command can only be used in a group!");
-    	})
-
-
-}
+  
 
 // lirik
  if (message.body.startsWith("!lirik ")) {
