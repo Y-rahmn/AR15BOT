@@ -17,8 +17,8 @@ Sebelum lu jalanin sc nya install dulu lah.
 ```bash
 > kalo lu belum punya apk termux, download di playstore
 > masuk ke apk termux lalu ketik dibawah ini!
-> git clone https://github.com/aris187id/bot
-> cd bot
+> git clone https://github.com/aris187id/whatsapp-bot
+> cd whatsapp-bot
 > bash install.sh
 > node index.js
 > Tinggal scan qr dah
@@ -26,7 +26,7 @@ Sebelum lu jalanin sc nya install dulu lah.
 
 ## Features
 
-| st4rz BOT       |                Feature           |
+| A187 ID BOT       |                Feature           |
 | :-----------: | :--------------------------------: |
 |       ✅       | Sticker Creator                  |
 |       ✅       | Magernulis                       |
