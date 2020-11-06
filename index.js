@@ -617,10 +617,13 @@ var  url = "http://tololbgt.coolpage.biz/lirik.php?judul="+judul;
 axios.get(url)
   .then((result) => {
 
-client.sendText(result.data.replace(/pjr-enter/g,"\n")
-})
+client.sendText(result.data.replace(/pjr-enter/g,"\n");
 
-}
+         });
+   }
+
+
+
 	if (message.body.includes("!nulis")) {
 		
  const { spawn } = require("child_process");
