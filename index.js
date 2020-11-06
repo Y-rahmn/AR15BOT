@@ -568,63 +568,9 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
           )
           console.log("done")
         })
-    }
-    
-    else if (msg.body.startsWith("!tts")) {
-	
-    var texttomp3 = require("text-to-mp3");
-      var fs = require("fs");
-  
-  var suara = msg.body.split("!tts ")[1];
-  var text = suara;
-  var fn = "tts/suara.mp3";
-  
-  
-  
-  
-  if(process.argv.indexOf("-?")!== -1){
-    
-    return;
-  }
-  
-  
-  if(process.argv.indexOf("-t")!== -1)
-    text=suara;
-  
-  if(process.argv.indexOf("-f")!== -1)
-    fn=suara;
-  
-  text = text.replace(/ +(?= )/g,'');//remove all multiple space
-  
-  if(typeof text ===  "undefined" || text === ""
-    || typeof fn === "undefined" || fn === "") { // just if I have a text I'm gona parse
-    
-  }
-  
-  //HERE WE GO
-  texttomp3.getMp3(text, function(err, data){
-    if(err){
-      console.log(err);
-      return;
-    }
-  
-    if(fn.substring(fn.length-4, fn.length) !== ".mp3"){ // if name is not well formatted, I add the mp3 extention
-      fn+=".mp3";
-    }
-    var file = fs.createWriteStream(fn); // write it down the file
-    file.write(data);
    
-    console.log("MP3 SAVED!");
     
-  });
-  await new Promise(resolve => setTimeout(resolve, 500));
-  
-    if(text.length > 200){ // check longness of text, because otherways google translate will give me a empty file
-    msg.reply("Text to long, split in text of 200 characters")
-  }else{
-    const media = MessageMedia.fromFilePath(fn);
-  
-    chat.sendMessage(media);
+    
   
   }
   
