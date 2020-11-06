@@ -728,17 +728,7 @@ conn.sendMessage(id, 'kirim !ptl cewek/cowok\n\nContoh: !ptl cewek' ,MessageType
 
 		}).json();
 
-		console.log(body[0]['name'])
-		msg.reply("╭───「 COVID-19 INDONESIA 」\n├≽ Positif : " + body[0]['positif'] + "\n├≽ Sembuh : " + body[0]['sembuh'] + "\n├≽ Meninggal : " + body[0]['meninggal'] + "\n├≽ Dirawat : " + body[0]['dirawat'] + "\n╰─────────");
-
-	} else if (msg.body.startsWith("!translate ")) {
-		const translatte = require('translatte');
-		var codelang = msg.body.split("[")[1].split("]")[0];
-		var text = msg.body.split("]")[1];
-		translatte(text, {to: codelang}).then(res => {
-    		msg.reply(res.text);
-			}).catch(err => {
-    			msg.reply(err);
+		
 		});
 	} else if (msg.body.startsWith('!bot join ')) {
         const inviteCode = msg.body.slice(10).replace('https://chat.whatsapp.com/', '')
