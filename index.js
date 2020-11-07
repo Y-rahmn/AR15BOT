@@ -152,8 +152,8 @@ conn.sendMessage(id, teks, MessageType.text)
             conn.log("done")
          })
    }
-})
-}
+
+
 
 if (msg.body.startsWith("!ytmp3 ")) {
 		var url = msg.body.split(" ")[1];
