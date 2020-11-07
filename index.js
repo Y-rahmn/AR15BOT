@@ -879,16 +879,6 @@ msg.reply(
 });
 }
 
-if (text.includes("!scdl")){
-const fs = require("fs");
-const scdl = require("./lib/scdl");
-
-scdl.setClientID("iZIs9mchVcX5lhVRyQGGAYlNPVldzAoX");
-
-scdl("https://m.soundcloud.com/abdul-muttaqin-701361735/lucid-dreams-gustixa-ft-vict-molina")
-    .pipe(fs.createWriteStream("mp3/song.mp3"));
-}
-
 
 
   if (text.includes("!tts")) {
