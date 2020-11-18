@@ -1,5 +1,5 @@
 {
-  "name": "AR15 BOT",
+  "name": "AR15BOT",
   "version": "1.0.0",
   "description": "Termux only",
   "main": "index.js",
