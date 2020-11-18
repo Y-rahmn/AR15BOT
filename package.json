@@ -1,7 +1,7 @@
 {
-  "name": "st4rzbot",
+  "name": "AR15 BOT",
   "version": "1.0.0",
-  "description": "bot whatsapp lewat hp doang",
+  "description": "Termux only",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bintang73/botst4rz.git"
+    "url": "git+https://github.com/aris187id/whatsapp-bot.git"
   },
   "keywords": [
     "k"
@@ -37,7 +37,7 @@
   "author": "Abdul Muttaqin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bintang73/botst4rz/issues"
+    "url": "https://github.com/aris187id/whatsapp-bot/issues"
   },
-  "homepage": "https://github.com/Bintang73/botst4rz#readme"
+  "homepage": "https://github.com/aris187id/whatsapp-bot#readme"
 }
