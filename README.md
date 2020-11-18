@@ -61,8 +61,9 @@ Script ini di modifikasi sama saya sendiri Aris187 ID.
 
 ## Note
 BOT INI KHUSUS HP/TERMUX DOANG YAH,JIKA MAU RE-UPLOAD CANTUMKAN NAMA SAYA (ARIS187 ID)
+
 ## Sosial Media Admin
 * [`Youtube Admin`](https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg)
 * [`Instagram Admin`](https://instagram.com/_sadboy.ig)
-* [`WhatsApp Admin `](wa.me/+6285722553839)
+* [`WhatsApp Admin `](https://wa.me/+6285722553839)
 
