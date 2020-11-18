@@ -1,4 +1,4 @@
-const BotName = '🤖AR15 BOT🤖'; // Nama Bot Whatsapp
+const BotName = '🤖AR15BOT🤖'; // Nama Bot Whatsapp
 const instagramlu = 'https://instagram.com/_sadboy.ig'; // Nama Instagramlu cok
 const whatsapplu = 'Wa.me/+6285722553839'; // Nomor whatsapplu cok
 const kapanbotaktif = '24 Jam'; // Kapan bot lu aktif
@@ -49,7 +49,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] Scan kode qr mu cok$`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] AR15BOT redy scan sekarang!`);
 });
 
 conn.on('credentials-updated', () =>
@@ -134,6 +134,9 @@ conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.
 }
 else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
+}
+else if (text == '$owner'){
+conn.sendMessage(id, 'Owner AR15BOT wa.me/+6285712632324' ,MessageType.text);
 }
 else if (text == 'Aris'){
 conn.sendMessage(id, 'Aku BOT nya Aris' ,MessageType.text);
