@@ -129,9 +129,6 @@ conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.
 else if (text == 'P'){
 conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
 }
-else if (text == '$owner'){
-conn.sendMessage(id, 'Owner BOT : https://wa.me/+6285722553839' ,MessageType.text);
-}
 else if (text == 'Halo'){
 conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
 }
