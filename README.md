@@ -1,4 +1,4 @@
-# 🤖AR15 BOT🤖
+# 🤖AR15BOT🤖
 BOT WHATSAPP TERMUX ONLY BY ARIS187 ID
 
 ### Alat dan Bahan
@@ -29,7 +29,7 @@ Script ini di modifikasi sama saya sendiri Aris187 ID.
 
 ## Features
 
-| AR15 BOT      |                   Feature        |
+| AR15BOT      |                   Feature        |
 | :-----------: | :------------------------------: |
 |       ✅       | Sticker Creator                  |
 |       ✅       | Nulis                            |
