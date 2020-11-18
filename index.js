@@ -129,8 +129,29 @@ conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.
 else if (text == 'P'){
 conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
 }
+else if (text == '$owner'){
+conn.sendMessage(id, 'Owner BOT : https://wa.me/+6285722553839' ,MessageType.text);
+}
 else if (text == 'Halo'){
 conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
+}
+else if (text == 'Asu'){
+conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
+}
+else if (text == 'Aris'){
+conn.sendMessage(id, 'Aku BOT nya Aris' ,MessageType.text);
+}
+else if (text == 'Ngentod'){
+conn.sendMessage(id, 'Pengin ngentod?' ,MessageType.text);
+}
+else if (text == 'anjing'){
+conn.sendMessage(id, 'Jangan toxic anjing' ,MessageType.text);
+}
+else if (text == 'Bacot'){
+conn.sendMessage(id, 'lu bacot_-' ,MessageType.text);
+}
+else if (text == 'Test'){
+conn.sendMessage(id, 'Test 1,2,3 ketik #help' ,MessageType.text);
 }
 else if (text == 'Hai'){
 conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
