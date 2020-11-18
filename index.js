@@ -1,3 +1,7 @@
+/*
+* "Jangan modal nama doang bro!!!"
+* (Scriptnya Aris187 ID).
+*/
 const BotName = '🤖AR15BOT🤖'; // Nama Bot Whatsapp
 const instagramlu = 'https://instagram.com/_sadboy.ig'; // Nama Instagramlu cok
 const whatsapplu = 'Wa.me/+6285722553839'; // Nomor whatsapplu cok
@@ -97,7 +101,7 @@ conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say h
 
 }
 
-// FF
+// FF A187 ID
 if(text.includes("#cek")){
 var num = text.replace(/#cek/ , "")
 var idn = num.replace("0","+62");
@@ -110,7 +114,7 @@ console.log(exists);
 conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
 }
 
-//Chat
+//Chat A187 ID
 else if (text == 'assalamualaikum'){
 conn.sendMessage(id, '3aalaikumsalam, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
 }
@@ -795,7 +799,7 @@ if (text.includes("$alay")){
 	})
 }
 
-//end
+//Tolonglah bro jangan di ubah ubah Aris187 ID
 
 
 })
