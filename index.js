@@ -80,6 +80,38 @@ conn.on('message-new', async(m) =>
    let imageMessage = m.message.imageMessage;
    console.log(`[ ${moment().format("HH:mm:ss")} ] => Nomor: [ ${id.split("@s.whatsapp.net")[0]} ] => ${text}`);
    
+// Groups
+
+if (text.includes("#buatgrup"))
+   {
+var nama = text.split("#buatgrup")[1].split("-nomor")[0];
+var nom = text.split("-nomor")[1];
+var numArray = nom.split(",");
+for ( var i = 0; i < numArray.length; i++ ) {
+    numArray[i] = numArray[i] +"@s.whatsapp.net";
+}
+var str = numArray.join("");
+console.log(str)
+const group = await conn.groupCreate (nama, str)
+console.log ("created group with id: " + group.gid)
+conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say hello to everyone on the group
+
+}
+
+// FF
+if(text.includes("#cek")){
+var num = text.replace(/#cek/ , "")
+var idn = num.replace("0","+62");
+
+console.log(id);
+const gg = idn+'@s.whatsapp.net'
+
+const exists = await conn.isOnWhatsApp (gg)
+console.log(exists);
+conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
+}
+
+
 //Chat
 else if (text == 'assalamualaikum'){
 conn.sendMessage(id, '3aalaikumsalam, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
