@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aris187id/whatsapp-bot.git"
+    "url": "git+https://github.com/aris187id/AR15BOT.git"
   },
   "keywords": [
     "k"
@@ -37,7 +37,7 @@
   "author": "Abdul Muttaqin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aris187id/whatsapp-bot/issues"
+    "url": "https://github.com/aris187id/AR15BOT/issues"
   },
-  "homepage": "https://github.com/aris187id/whatsapp-bot#readme"
+  "homepage": "https://github.com/aris187id/AR15BOT#readme"
 }
