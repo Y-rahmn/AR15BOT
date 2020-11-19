@@ -53,7 +53,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] AR15BOT Ready Scan Now!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] AR15BOT By A187ID Ready Scan Now!`);
 });
 
 conn.on('credentials-updated', () =>
@@ -151,9 +151,6 @@ conn.sendMessage(id, 'Ngentod Bapak kau_-' ,MessageType.text);
 else if (text == 'Anjing'){
 conn.sendMessage(id, 'Jangan toxic anjing' ,MessageType.text);
 }
-else if (text == '!creator'){
-conn.sendContact(from,'6285722553839@c.us') ,MessageType.Contact);
-}
 else if (text == 'Bacot'){
 conn.sendMessage(id, 'lu bacot_-' ,MessageType.text);
 }
@@ -245,16 +242,16 @@ else if (text == 'Thanks'){
 conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
 }
 
-// Fitur
+// Fitur A187id
 
 if (text.includes('$nulis')){
-  var nulis = text.replace(/$nulis /, '')
+  const nulis = text.replace(/$nulis /, '')
     axios.get('https://bangandre.herokuapp.com/nulis?teks=${nulis}') .then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
             conn.sendMessage(id, '[ WAIT ] Sedang di proses⏳ silahkan tunggu sebentar', MessageType.text)
-            var buf = Buffer.from(ress, 'base64')
+            const buf = Buffer.from(ress, 'base64')
             conn.sendMessage(id, buf, MessageType.image)
         })
     })
@@ -675,11 +672,11 @@ _${kata}_
 
 
 
-
+❣️❣️❣️❣️❣️❣️❣️❣️❣️
 
          Nama _*${nama}*_ ${h}
          
-
+❣️❣️❣️❣️❣️❣️❣️❣️❣️
 
 `,
  MessageType.text);
@@ -705,15 +702,14 @@ _${kata}_
       console.log(""+ d);
       conn.sendMessage(id, `
 
-
+💘💘💘💘💘💘💘💘
 
  *Kecocokan berdasarkan nama*
 
 
  ${d}
 
-
-
+💘💘💘💘💘💘💘💘
     `, MessageType.text);
   });
   }
