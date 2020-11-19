@@ -140,7 +140,10 @@ else if (text == 'Asu'){
 conn.sendMessage(id, 'Gx boleh kasar lu Asw' ,MessageType.text);
 }
 else if (text == '$owner'){
-conn.sendMessage(id, 'Owner AR15BOT wa.me/+6285733553839' ,MessageType.text);
+conn.sendMessage(id, 'Owner wa.me/+6285733553839' ,MessageType.text);
+}
+else if (text == '$creator'){
+conn.sendMessage(id, 'Creator wa.me/+6285733553839' ,MessageType.text);
 }
 else if (text == 'Aris'){
 conn.sendMessage(id, 'Aku BOT nya Aris' ,MessageType.text);
@@ -335,7 +338,7 @@ if (text.includes("$sholat")){
   const teks = text.replace(/$sholat /, "")
   axios.get(`https://api.haipbis.xyz/jadwalsholat?daerah=${teks}`).then ((res) =>{
   conn.sendMessage(id, '[ WAIT ] Sedang di proses⏳ silahkan tunggu sebentar', MessageType.text)
-  let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\n⚡Imsyak : ${res.data."Imsyak"}\n⚡Subuh : ${res.data."Subuh"} WIB\n⚡Dzuhur : ${res.data."Dzuhur"}WIB\n⚡Ashar : ${res.data."Ashar"} WIB\n⚡Maghrib : ${res.data."Maghrib"}\n⚡Isya : ${res.data."Isya"} WIB\n⚡Tengah malam : ${res.data."Dhuha"} WIB`;
+  let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\n⚡Imsyak : ${res.data.Imsyak}\n⚡Subuh : ${res.data.Subuh} WIB\n⚡Dzuhur : ${res.data.Dzuhur}WIB\n⚡Ashar : ${res.data.Ashar} WIB\n⚡Maghrib : ${res.data.Maghrib}\n⚡Isya : ${res.data.Isya} WIB\n⚡Tengah malam : ${res.data.Dhuha} WIB`;
   conn.sendMessage(id, hasil, MessageType.text);
 })
 }
