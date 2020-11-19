@@ -167,7 +167,7 @@ else if (text == 'Kontol'){
 conn.sendMessage(id, 'Siapa yang kontol?' ,MessageType.text);
 }
 else if (text == 'Bot'){
-conn.sendMessage(id, 'Aku Bot...ketik #help  ,MessageType.text);
+conn.sendMessage(id, 'Aku Bot...ketik #help'  ,MessageType.text);
 }
 else if (text == 'Hai'){
 conn.sendMessage(id, 'Ya?, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
