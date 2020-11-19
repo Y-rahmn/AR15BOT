@@ -102,12 +102,12 @@ conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say h
 }
 
 // FF A187 ID
-if(text.includes("#cek")){
-var num = text.replace(/#cek/ , "")
+if(text.includes("$cek")){
+var num = text.replace(/$cek/ , "")
 var idn = num.replace("0","+62");
 
 console.log(id);
-const gg = idn+'@s.whatsapp.net'
+const gg = idn+'@c.us'
 
 const exists = await conn.isOnWhatsApp (gg)
 console.log(exists);
@@ -148,8 +148,11 @@ conn.sendMessage(id, 'Aku BOT nya Aris' ,MessageType.text);
 else if (text == 'Ngentod'){
 conn.sendMessage(id, 'Ngentod Bapak kau_-' ,MessageType.text);
 }
-else if (text == 'Jnjing'){
+else if (text == 'Anjing'){
 conn.sendMessage(id, 'Jangan toxic anjing' ,MessageType.text);
+}
+else if (text == '!creator'){
+conn.sendContact(from,'6285722553839@c.us') ,MessageType.Contact);
 }
 else if (text == 'Bacot'){
 conn.sendMessage(id, 'lu bacot_-' ,MessageType.text);
@@ -245,9 +248,8 @@ conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.tex
 // Fitur
 
 if (text.includes('$nulis')){
-  var teks = text.replace(/$nulis /, '')
-    axios.get('https://bangandre.herokuapp.com/nulis?teks=${teks}')
-    .then((res) => {
+  var nulis = text.replace(/$nulis /, '')
+    axios.get('https://bangandre.herokuapp.com/nulis?teks=${nulis}') .then((res) => {
       imageToBase64(res.data.result)
         .then(
           (ress) => {
@@ -336,7 +338,7 @@ if (text.includes("$sholat")){
   const teks = text.replace(/$sholat /, "")
   axios.get(`https://api.haipbis.xyz/jadwalsholat?daerah=${teks}`).then ((res) =>{
   conn.sendMessage(id, '[ WAIT ] Sedang di proses⏳ silahkan tunggu sebentar', MessageType.text)
-  let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\n⚡Imsyak : ${res.data.Imsyak}\n⚡Subuh : ${res.data.Subuh} WIB\n⚡Dzuhur : ${res.data.Dzuhur}WIB\n⚡Ashar : ${res.data.Ashar} WIB\n⚡Maghrib : ${res.data.Maghrib}\n⚡Isya : ${res.data.Isya} WIB\n⚡Tengah malam : ${res.data.Dhuha} WIB`;
+  let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\n⚡Imsyak : ${res.data."Imsyak"}\n⚡Subuh : ${res.data."Subuh"} WIB\n⚡Dzuhur : ${res.data."Dzuhur"}WIB\n⚡Ashar : ${res.data."Ashar"} WIB\n⚡Maghrib : ${res.data."Maghrib"}\n⚡Isya : ${res.data."Isya"} WIB\n⚡Tengah malam : ${res.data."Dhuha"} WIB`;
   conn.sendMessage(id, hasil, MessageType.text);
 })
 }
