@@ -143,7 +143,7 @@ else if (text == '$owner'){
 conn.sendMessage(id, 'Owner wa.me/+6281287787370' ,MessageType.text);
 }
 else if (text == '$creator'){
-conn.sendMessage(id, 'Creator wa.me/+6285733553839' ,MessageType.text);
+conn.sendMessage(id, 'Creator wa.me/+6281287787370' ,MessageType.text);
 }
 else if (text == 'rahman'){
 conn.sendMessage(id, 'Aku BOT nya rahman' ,MessageType.text);
@@ -822,7 +822,7 @@ if (text.includes("$alay")){
 	})
 }
 
-//Tolonglah bro jangan di ubah ubah Aris187 ID
+//Tolonglah bro jangan di ubah ubah 💋rahman🐼
 
 
 })
