@@ -101,7 +101,7 @@ conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say h
 
 }
 
-// FF rahman ID
+// FF A187 ID
 if(text.includes("$cek")){
 var num = text.replace(/$cek/ , "")
 var idn = num.replace("0","+62");
@@ -114,7 +114,7 @@ console.log(exists);
 conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
 }
 
-//Chat rahman ID
+//Chat A187 ID
 else if (text == 'assalamualaikum'){
 conn.sendMessage(id, '3aalaikumsalam, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
 }
@@ -145,8 +145,8 @@ conn.sendMessage(id, 'Owner wa.me/+6281287787370' ,MessageType.text);
 else if (text == '$creator'){
 conn.sendMessage(id, 'Creator wa.me/+6281287787370' ,MessageType.text);
 }
-else if (text == 'rahman'){
-conn.sendMessage(id, 'Aku BOT nya rahman' ,MessageType.text);
+else if (text == 'Rahman'){
+conn.sendMessage(id, 'Aku BOT nya Rahman' ,MessageType.text);
 }
 else if (text == 'Ngentod'){
 conn.sendMessage(id, 'Ngentod Bapak kau_-' ,MessageType.text);
@@ -822,8 +822,10 @@ if (text.includes("$alay")){
 	})
 }
 
-//Tolonglah bro jangan di ubah ubah 💋rahman🐼
+//Tolonglah bro jangan di ubah ubah rahman
 
 
 })
+
+
 
