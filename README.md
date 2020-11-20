@@ -1,5 +1,5 @@
 # 🐼rahamn🐼
-BOT WHATSAPP TERMUX ONLY BY rahman ID
+BOT WHATSAPP TERMUX ONLY BY RAHMAN ID
 
 ### Alat dan Bahan
 Siapin alat dan bahannya.
@@ -60,10 +60,10 @@ Script ini di modifikasi sama saya sendiri Aris187 ID.
 |       ✅       | Donate                           |
 
 ## Note
-BOT INI KHUSUS HP/TERMUX DOANG YAH,JIKA MAU RE-UPLOAD CANTUMKAN NAMA SAYA (ARIS187 ID)
+BOT INI KHUSUS HP/TERMUX DOANG YAH,JIKA MAU RE-UPLOAD CANTUMKAN NAMA SAYA (RAHMAN ID)
 
 ## Sosial Media Admin
-* [`Youtube Admin`](https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg)
-* [`Instagram Admin`](https://instagram.com/_sadboy.ig)
-* [`WhatsApp Admin `](https://wa.me/+6285722553839)
+* [`Youtube Admin`](https://www.youtube.com/channel/UC97YO6MSf1v804PE8DRmcYQ)
+* [`Instagram Admin`](https://instagram.com/raykon_45)
+* [`WhatsApp Admin `](https://wa.me/+6281287787370)
 
