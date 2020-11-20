@@ -1,14 +1,14 @@
 /*
 * "Jangan modal nama doang bro!!!"
-* (Scriptnya Aris187 ID).
+* (Scriptnya Rahman).
 */
-const BotName = '🤖AR15BOT🤖'; // Nama Bot Whatsapp
-const instagramlu = 'https://instagram.com/_sadboy.ig'; // Nama Instagramlu cok
-const whatsapplu = 'Wa.me/+6285722553839'; // Nomor whatsapplu cok
+const BotName = '🐼Rahman gan🐼'; // Nama Bot Whatsapp
+const instagramlu = 'https://instagram.com/raykon_45'; // Nama Instagramlu cok
+const whatsapplu = 'Wa.me/+6281287787370'; // Nomor whatsapplu cok
 const kapanbotaktif = '24 Jam'; // Kapan bot lu aktif
-const grupch1 = 'https://chat.whatsapp.com/GU6NsgZvfgw37vrjIxUPhP'; // OFFICIAL GRUP LU 1
-const grupch2 = 'https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg'; // OFFICIAL GRUP LU 2
-const grupch3 = 'https://instagram.com/_sadboy.ig'; // OFFICIAL GRUP LU 3
+const grupch1 = 'https://chat.whatsapp.com/IEvKZ7MxwxF79f5TRDdkgs'; // OFFICIAL GRUP LU 1
+const grupch2 = 'https://www.youtube.com/channel/UC97YO6MSf1v804PE8DRmcYQ'; // OFFICIAL GRUP LU 2
+const grupch3 = 'https://instagram.com/raykon_45'; // OFFICIAL GRUP LU 3
 //
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
@@ -140,13 +140,13 @@ else if (text == 'Asu'){
 conn.sendMessage(id, 'Gx boleh kasar lu Asw' ,MessageType.text);
 }
 else if (text == '$owner'){
-conn.sendMessage(id, 'Owner wa.me/+6285733553839' ,MessageType.text);
+conn.sendMessage(id, 'Owner wa.me/+6281287787370' ,MessageType.text);
 }
 else if (text == '$creator'){
 conn.sendMessage(id, 'Creator wa.me/+6285733553839' ,MessageType.text);
 }
-else if (text == 'Aris'){
-conn.sendMessage(id, 'Aku BOT nya Aris' ,MessageType.text);
+else if (text == 'rahman'){
+conn.sendMessage(id, 'Aku BOT nya rahman' ,MessageType.text);
 }
 else if (text == 'Ngentod'){
 conn.sendMessage(id, 'Ngentod Bapak kau_-' ,MessageType.text);
