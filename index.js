@@ -2,7 +2,7 @@
 * "Jangan modal nama doang bro!!!"
 * (Scriptnya Rahman).
 */
-const BotName = '🐼Rahman gan🐼'; // Nama Bot Whatsapp
+const BotName = '🤖Rahman gan🤖'; // Nama Bot Whatsapp
 const instagramlu = 'https://instagram.com/raykon_45'; // Nama Instagramlu cok
 const whatsapplu = 'Wa.me/+6281287787370'; // Nomor whatsapplu cok
 const kapanbotaktif = '24 Jam'; // Kapan bot lu aktif
@@ -101,7 +101,7 @@ conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say h
 
 }
 
-// FF A187 ID
+// FF rahman ID
 if(text.includes("$cek")){
 var num = text.replace(/$cek/ , "")
 var idn = num.replace("0","+62");
@@ -114,7 +114,7 @@ console.log(exists);
 conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
 }
 
-//Chat A187 ID
+//Chat rahman ID
 else if (text == 'assalamualaikum'){
 conn.sendMessage(id, '3aalaikumsalam, Ketik #help/#info/#donasi Contoh #help' ,MessageType.text);
 }
